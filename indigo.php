@@ -563,7 +563,7 @@ function logintoaccount($acctname, $password)
     $devname=uniqid('SAM');
 
     $urll = "https://identity.mylykaapps.com/useraccounts/login";
-    $curll = curl_init($urll);
+    #$curll = curl_init($urll);
     curl_setopt($curll, CURLOPT_URL, $urll);
     curl_setopt($curll, CURLOPT_POST, true);
     curl_setopt($curll, CURLOPT_RETURNTRANSFER, true);
